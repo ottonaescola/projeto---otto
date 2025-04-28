@@ -5,17 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"  crossorigin="anonymous"  />
     <link rel="stylesheet" href="style.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <title>Bruno Henrique Portifólio</title>
   </head>
   <body> 
     <header class="container text-center"> 
-    <img src="img/bruno-henrique.webp" class="rounded-5" alt="avatar do BH27" srcset="" height="600" width="1300"/>
-    <p class="lead"><strong> Eu sou BRUNO HENRIQUE </strong></p>
+      <div class="avatar"> 
+        <img src="img/bruno-henrique.webp" class="rounded-5" alt="background">
+        <img src="img/BRUNOprofile.jpg" class="rounded-circle" alt="avatar" srcset="" height="300" width="300"/>
+      </div>
+    <p class="lead"><strong>BRUNO HENRIQUE </strong></p>
     <h1>Eu jogo futebol</h1>
     <p> Sou Bruno Henrique, atacante do Flamengo desde 2019. Tenho orgulho de já ter conquistado 14 títulos com o clube, incluindo duas Libertadores, dois Brasileirões e duas Copas do Brasil. Além disso, marquei 97 gols pelo Flamengo, sendo decisivo em grandes momentos. 
         Sempre busco evolução e faço da velocidade e habilidade meus maiores diferenciais. É uma honra representar o Flamengo e continuar escrevendo essa história.
         </p>
-        <p>Minhas habilidades</p>
+        <h2>Minhas habilidades</h2>
         <div>
           <span class="badge rounded-pill text-bg-primary">Velocidade</span>
           <span class="badge rounded-pill text-bg-info">Finalização</span>
@@ -26,41 +31,130 @@
   <main class="container">
     <h2>Títulos</h2>
     <div class="row">
-      <div class="col-md-4">     
+      <div class="col-md-3">     
         <div class="col">
           <div class="card h-100">
             <img src="img/Brasileiro.jpg" class="card-img-top" alt="Brasileiro">
             <div class="card-body">
               <h5 class="card-title">Serie A 2019</h5>
-              <p class="card-text">Campeonato Brasileiro Série A 2019</p>
+              <p class="card-text">Brasileiro Série A 2019</p>
+              <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#videoModal1">Assista</button>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-3">
         <div class="col">
           <div class="card h-100">
             <img src="img/Libertadores.jpg" class="card-img-top" alt="Libertadores">
             <div class="card-body">
             <h5 class="card-title">Libertadores 2019</h5>
             <p class="card-text">Copa Libertadores 2019</p>
+            <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#videoModal2">Assista</button>
             </div>
           </div>
         </div>
-      </div>
-   
-        <div class="col-md-4">
+      </div>   
+        <div class="col-md-3">
           <div class="col">
             <div class="card h-100">
-              <img src="img/Supercopa .avif" class="card-img-top" alt="Supercopa">
+              <img src="img/Supercopa.avif" class="card-img-top" alt="Supercopa">
               <div class="card-body">
                 <h5 class="card-title">Supercopa 2024</h5>
                 <p class="card-text">Supercopa do Brasil 2024</p>
+                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#videoModal3">Assista</button>
               </div>
             </div>
           </div>
         </div>
-      </main>
+        <div class="col-md-3">
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/Libertadores2022.jpg" class="card-img-top" alt="Libertadores2022">
+              <div class="card-body">
+                <h5 class="card-title">Libertadores 2022</h5>
+                <p class="card-text">Copa Libertadores 2022</p>
+                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#videoModal4">Assista</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </main>
+  
+  <footer class="container py-5 text-center">
+    <h2>Entre em Contato</h2>
+    <a href="https://www.instagram.com/b.henrique/" target="_blank" class="btn btn-primary">
+      <i class="fab fa-instagram"></i> Instagram
+    </a>
+    <a href="https://www.facebook.com/brunohenrique27oficial/" target="_blank" class="btn btn-primary">
+      <i class="fab fa-facebook"></i> Facebook
+    </a>
+    <a href="https://www.transfermarkt.com.br/bruno-henrique/profil/spieler/353108" target="_blank" class="btn btn-primary">
+      <i class="fas fa-futbol"></i> Transfermarkt</a>
+      <p class="my-5 text-center">© Copyright 2025 Produzido por Otto Yamandu</p>
+  </footer>
+  
+  <!-- Modals -->
+  <div class="modal fade" id="videoModal1" tabindex="-1" aria-labelledby="videoModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="videoModal1Label">Serie A 2019</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="https://img.youtube.com/vi/bf-qmlQVIfA/maxresdefault.jpg" alt="Serie A 2019 Thumbnail" class="img-fluid mb-3">
+          <a href="https://www.youtube.com/watch?v=bf-qmlQVIfA" target="_blank" class="btn btn-primary">Assistir no YouTube</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="videoModal2" tabindex="-1" aria-labelledby="videoModal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="videoModal2Label">Libertadores 2019</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="https://img.youtube.com/vi/vKlLy8jS0rk/maxresdefault.jpg" alt="Libertadores 2019 Thumbnail" class="img-fluid mb-3">
+          <a href="https://www.youtube.com/watch?v=vKlLy8jS0rk" target="_blank" class="btn btn-primary">Assistir no YouTube</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="videoModal3" tabindex="-1" aria-labelledby="videoModal3Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="videoModal3Label">Supercopa 2024</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="https://img.youtube.com/vi/T-PWDHoJLAQ/maxresdefault.jpg" alt="Supercopa 2024 Thumbnail" class="img-fluid mb-3">
+          <a href="https://www.youtube.com/watch?v=T-PWDHoJLAQ" target="_blank" class="btn btn-primary">Assistir no YouTube</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="videoModal4" tabindex="-1" aria-labelledby="videoModal4Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="videoModal4Label">Libertadores 2022</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="https://img.youtube.com/vi/nxG9pPFQMsg/maxresdefault.jpg" alt="Libertadores 2022 Thumbnail" class="img-fluid mb-3">
+          <a href="https://www.youtube.com/watch?v=nxG9pPFQMsg" target="_blank" class="btn btn-primary">Assistir no YouTube</a>
+        </div>
+      </div>
+    </div>
+  </div>
   
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
